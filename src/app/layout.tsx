@@ -1,6 +1,4 @@
 import type { Metadata } from 'next';
-// @ts-expect-error Next.js loads global CSS as a side effect; TypeScript may not
-// have a declaration for this stylesheet import.
 import './globals.css';
 import { AuthProvider } from '@/components/AuthProvider';
 

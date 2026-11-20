@@ -162,7 +162,7 @@ test('Security: Protected route redirects unauthenticated visitor', async ({ pag
         preconditions: ['Target API server reachable'],
         steps: [
           { order: 1, action: 'api_call', target: targetUrl, expected: 'HTTP 200, 201, 401 or 403' },
-          { order: 2, action: 'assert', target: 'status_code', expected: 200 },
+          { order: 2, action: 'assert', target: 'status_code', expected: '200' },
         ],
         assertions: [
           { type: 'status_code', target: 'response', expected: 200 },
